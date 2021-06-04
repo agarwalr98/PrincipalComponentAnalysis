@@ -78,7 +78,7 @@ X = X - mean
 print("Shape of X ,", X.shape)
 
 # finding covariance matrix , transpose(X)*X
-cov_mat = np.matmul(X.transpose(),X   )
+cov_mat = np.matmul(X.transpose(),X   )/(X.shape[0]-1)
 # cov_mat = np.cov(flat_arr.transpose())
 
 print("Shape of covariance matrix :", cov_mat.shape)
